@@ -1,12 +1,15 @@
-import { color } from 'framer-motion'
+'use client'
 import React from 'react'
 import { useSelector } from 'react-redux'
 
 const box = () => {
-    const(color, width, height)= useSelector[state=>state.box]
+    const {height, width, backgroundColor}= useSelector(state=>state.box)
   return (
     <div>
-      Box
+      <div style={{backgroundColor: backgroundColor, height: height, width:width }}>
+        
+        </div>
+  
     </div>
   )
 }

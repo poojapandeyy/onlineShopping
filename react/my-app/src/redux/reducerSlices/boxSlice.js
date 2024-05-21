@@ -1,13 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = { 
-    color: 'red',
+    backgroundColor: 'red',
    width:'50',
    height: '20'
 }
 
-const counterSlice = createSlice({
-  name: 'box',
+const boxSlice = createSlice({
+  name: 'counter',
   initialState: initialState,
   reducers: {
     changeHeight(state){
@@ -16,5 +16,5 @@ const counterSlice = createSlice({
   },
 })
 
-export const {changeHeight} = counterSlice.actions
+export const {changeHeight} = boxSlice.actions
 export default boxSlice.reducer
